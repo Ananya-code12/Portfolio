@@ -1,44 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Ananya Maurya — B.Tech CSE Student" />
+  <title>About — Ananya Maurya</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">Ananya Maurya<span> Portfolio</span></div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="hackathons.html">Hackathons</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 
-    <section class="container fade-in">
-        <h2 class="section-title">About Me</h2>
+  <!-- ── Navbar ─────────────────────────────────────────── -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo mono">&lt;<span>Ananya Maurya</span> /&gt;</a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="hackathons.html">Hackathons</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ── Page Header ────────────────────────────────────── -->
+    <header class="page-header">
+      <div class="page-header-glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-label fade-in">Who I Am</div>
+        <h1 class="fade-in">About <em>Me.</em></h1>
+      </div>
+    </header>
+
+    <div class="divider"></div>
+
+    <!-- ── About Grid ─────────────────────────────────────── -->
+    <section class="section">
+      <div class="container">
         <div class="about-grid">
-            <div class="about-text">
-                <p>I am a pre final-year B.Tech Computer Science student with a strong foundation in software development and problem-solving. I love turning complex problems into simple, beautiful, intuitive designs and passionate about software and frontend development. Hands-on experience in team projects, hackathons, and technical workshops. Strong foundation in web technologies, quick learner, and eager to contribute to real-world software solutions Actively learning new technologies and seeking opportunities to gain practical experience, enhance technical and professional skills. And also a quick learner with a positive attitude.</p>
-                
-                <h3>Education</h3>
-                <ul class="edu-list">
-                    <li>
-                        <strong>Bachelor of Technology in Computer Science</strong><br>
-                        AKTU University | 2023 - 2027<br>
-                        CGPA: 8.0/10.0
-                    </li>
-                </ul>
 
-                <h3>Career Goals</h3>
-                <p>My goal is to leverage my technical skills in a challenging environment where I can contribute to impactful projects while continuously learning emerging technologies.</p>
+          <!-- Avatar column -->
+          <aside class="about-avatar fade-in">
+            <div class="avatar-frame" aria-label="Profile photo placeholder">
+              <span class="avatar-initials" aria-hidden="true">Ananya Maurya</span>
             </div>
+            <div class="avatar-badge">📍 India</div>
+
+            <!-- Quick facts card -->
+            <div class="card" style="margin-top:32px;">
+              <h3 style="font-size:0.78rem;letter-spacing:0.15em;text-transform:uppercase;font-family:var(--mono);color:var(--text-muted);margin-bottom:16px;">Quick Facts</h3>
+
+              <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;">
+                <li style="display:flex;align-items:center;gap:10px;font-size:0.88rem;">
+                  <span style="color:var(--accent);font-family:var(--mono);">→</span>
+                  <span>B.Tech Computer Science Engineering</span>
+                </li>
+                <li style="display:flex;align-items:center;gap:10px;font-size:0.88rem;">
+                  <span style="color:var(--accent);font-family:var(--mono);">→</span>
+                  <span>3rd Year Undergraduate</span>
+                </li>
+                <li style="display:flex;align-items:center;gap:10px;font-size:0.88rem;">
+                  <span style="color:var(--accent);font-family:var(--mono);">→</span>
+                  <span>CGPA: 8.0 / 10</span>
+                </li>
+                <li style="display:flex;align-items:center;gap:10px;font-size:0.88rem;">
+                  <span style="color:var(--accent);font-family:var(--mono);">→</span>
+                  <span>Open to Internships & Roles</span>
+                </li>
+              </ul>
+            </div>
+          </aside>
+
+          <!-- Text column -->
+          <div class="about-text">
+            <div class="glow-line"></div>
+
+            <p class="fade-in">
+              Hey! I'm <strong style="color:var(--text);">Ananya Maurya</strong>, a third-year B.Tech student
+              specialising in Computer Science and Engineering. I'm driven by a genuine love for
+              building software that solves real problems — whether that's a slick web app, an
+              efficient backend system, or a clever algorithmic solution.
+            </p>
+
+            <p class="fade-in">
+              My journey into tech started with curiosity and a lot of late-night tinkering.
+              Over time, that curiosity turned into a disciplined practice of learning by doing.
+              I've shipped multiple projects, participated in hackathons, and contributed to
+              open-source — each experience shaping how I think and write code.
+            </p>
+
+            <p class="fade-in">
+              Outside of academics, I spend time competitive programming, reading about system
+              design, and experimenting with new frameworks. I believe great software is built at
+              the intersection of technical depth and human-centred thinking.
+            </p>
+
+            <!-- Education timeline -->
+            <div class="edu-timeline" style="margin-top:44px;">
+              <h3 style="font-family:var(--mono);font-size:0.78rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--text-muted);margin-bottom:24px;">Education</h3>
+
+              <div class="edu-item fade-in">
+                <div class="edu-year">2023 — Present</div>
+                <div class="edu-degree">B.Tech — Computer Science &amp; Engineering</div>
+                <div class="edu-school">Maharana Pratap Engineering College, Kanpur &nbsp;·&nbsp; CGPA 8.0</div>
+              </div>
+
+              <div class="edu-item fade-in">
+                <div class="edu-year">2021 — 2023</div>
+                <div class="edu-degree">Class XII — Science (PCM )</div>
+                <div class="edu-school"> U.P Board &nbsp;·&nbsp; 79.2%</div>
+              </div>
+
+              <div class="edu-item fade-in">
+                <div class="edu-year">2019 — 2021</div>
+                <div class="edu-degree">Class X </div>
+                <div class="edu-school"> U.P Board &nbsp;·&nbsp; 79%</div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- Career Goals -->
+        <div style="margin-top:80px;">
+          <div class="section-label fade-in">Looking Forward</div>
+          <h2 style="margin-bottom:40px;" class="fade-in">Career Goals</h2>
+
+          <div class="goals-grid">
+            <article class="goal-card fade-in">
+              <div class="goal-icon">🚀</div>
+              <h4>Software Engineering</h4>
+              <p>Land a role as a software engineer at a product-based company where I can build impactful, scalable systems.</p>
+            </article>
+
+            <article class="goal-card fade-in">
+              <div class="goal-icon">📐</div>
+              <h4>System Design</h4>
+              <p>Deepen my understanding of distributed systems and architecture to design products that scale.</p>
+            </article>
+
+            <article class="goal-card fade-in">
+              <div class="goal-icon">🌐</div>
+              <h4>Open Source</h4>
+              <p>Actively contribute to meaningful open-source projects and grow a reputation in the developer community.</p>
+            </article>
+
+            <article class="goal-card fade-in">
+              <div class="goal-icon">🎓</div>
+              <h4>Continuous Learning</h4>
+              <p>Pursue postgraduate studies or specialisation in AI/ML after gaining industry experience.</p>
+            </article>
+          </div>
+        </div>
+      </div>
     </section>
-    <script src="script.js"></script>
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p class="footer-text">
+        Crafted with curiosity by <a href="index.html">Ananya Maurya</a> &nbsp;·&nbsp; 2026
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

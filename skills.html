@@ -1,44 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Skills</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Skills — Ananya Maurya" />
+  <title>Skills — Ananya Maurya</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">Ananya Maurya<span> Portfolio</span></div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html" class="active">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="hackathons.html">Hackathons</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 
-    <section class="container fade-in">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card"><h3>Languages</h3><p>Java, C, Python, SQL</p></div>
-            <div class="skill-card"><h3>Frontend</h3><p>HTML5, CSS3, JavaScript </p></div>
-            <div class="skill-card"><h3>Tools</h3><p>Git, VS Code</p></div>
-            <div class="skill-card"><h3>Problem Solving</h3><p>LeetCode, HackerRank</p></div>
-        </div>
-        
-        <div class="progress-section">
-            <div class="skill-bar">
-                <span>Java</span>
-                <div class="bar-bg"><div class="bar-fill" style="width: 80%;"></div></div>
+  <!-- ── Navbar ─────────────────────────────────────────── -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo mono">&lt;<span>Ananya Maurya</span> /&gt;</a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="hackathons.html">Hackathons</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ── Page Header ────────────────────────────────────── -->
+    <header class="page-header">
+      <div class="page-header-glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-label fade-in">Toolkit</div>
+        <h1 class="fade-in">My <em>Skills.</em></h1>
+      </div>
+    </header>
+
+    <div class="divider"></div>
+
+    <!-- ── Skills Section ─────────────────────────────────── -->
+    <section class="section">
+      <div class="container">
+
+        <div class="skills-categories fade-in">
+
+          <!-- Languages -->
+          <div class="skill-category card">
+            <h3>Languages</h3>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Java</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:70%"></div>
+              </div>
             </div>
-            <div class="skill-bar">
-                <span>JavaScript</span>
-                <div class="bar-bg"><div class="bar-fill" style="width: 75%;"></div></div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Python</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:80%"></div>
+              </div>
             </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">C++</span>
+                <span class="skill-pct">60%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:75%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">C </span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:70%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web & Database -->
+          <div class="skill-category card">
+            <h3>Web &amp; Database</h3>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">HTML &amp; CSS</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:90%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">SQL (MySQL )</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:70%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:60%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Concepts -->
+          <div class="skill-category card">
+            <h3>Tools &amp; Concepts</h3>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Git &amp; GitHub</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:85%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Data Structures &amp; Algorithms</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:80%"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">OOP &amp; System Design</span>
+                <span class="skill-pct">72%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" style="--w:72%"></div>
+              </div>
+            </div>
+          </div>
+
         </div>
+
+        <!-- ── Tech Cloud ──────────────────────────────────── -->
+        <div class="tech-cloud fade-in">
+          <h3>Also familiar with</h3>
+          <div class="tech-tags">
+            <span class="tag tag-accent">VS Code</span>
+            <span class="tag tag-accent">Google Colab</span>
+            <span class="tag tag-accent">Git</span>
+            <span class="tag tag-accent">GitHub</span>
+            <span class="tag tag-accent">Jupyter Notebook</span>
+            <span class="tag tag-accent">Canva</span>
+            <span class="tag tag-accent">Vercel</span>
+            <span class="tag tag-accent">Pandas</span>
+            <span class="tag tag-accent">NumPy</span>
+          </div>
+        </div>
+
+        <!-- ── Soft Skills ─────────────────────────────────── -->
+        <div style="margin-top:80px;">
+          <div class="section-label fade-in">Beyond Code</div>
+          <h2 style="margin-bottom:40px;" class="fade-in">Soft Skills</h2>
+
+          <div class="projects-grid">
+            <article class="card fade-in" style="text-align:center;">
+              <div style="font-size:2rem;margin-bottom:12px;">🧠</div>
+              <h3 style="margin-bottom:8px;">Analytical Thinking</h3>
+              <p style="font-size:0.86rem;">Breaking down complex problems into structured, manageable solutions.</p>
+            </article>
+
+            <article class="card fade-in" style="text-align:center;">
+              <div style="font-size:2rem;margin-bottom:12px;">🤝</div>
+              <h3 style="margin-bottom:8px;">Team Collaboration</h3>
+              <p style="font-size:0.86rem;">Effective communicator with experience in agile team environments.</p>
+            </article>
+
+            <article class="card fade-in" style="text-align:center;">
+              <div style="font-size:2rem;margin-bottom:12px;">⏱️</div>
+              <h3 style="margin-bottom:8px;">Time Management</h3>
+              <p style="font-size:0.86rem;">Balancing academics, projects, and personal growth with discipline.</p>
+            </article>
+          </div>
+        </div>
+
+      </div>
     </section>
-    <script src="script.js"></script>
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p class="footer-text">
+        Crafted with curiosity by <a href="index.html">Ananya Maurya</a> &nbsp;·&nbsp; 2026
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

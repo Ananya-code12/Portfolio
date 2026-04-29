@@ -1,56 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects — Aryan Sharma" />
+  <title>Projects — Aryan Sharma</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">Ananya Maurya<span> Portfolio</span></div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html" class="active">Projects</a></li>
-            <li><a href="hackathons.html">Hackathons</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 
-    <section class="container fade-in">
-        <h2 class="section-title">Projects</h2>
+  <!-- ── Navbar ─────────────────────────────────────────── -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo mono">&lt;<span>Ananya Maurya</span> /&gt;</a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="hackathons.html">Hackathons</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ── Page Header ────────────────────────────────────── -->
+    <header class="page-header">
+      <div class="page-header-glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-label fade-in">What I've Built</div>
+        <h1 class="fade-in">Projects.</h1>
+      </div>
+    </header>
+
+    <div class="divider"></div>
+
+    <!-- ── Projects Grid ──────────────────────────────────── -->
+    <section class="section">
+      <div class="container">
+
         <div class="projects-grid">
-            <div class="project-card">
-                <div class="status-tag group project">Completed</div>
-                <h3>PhishShield</h3>
-                <p>A tool to detect and block phishing websites in real-time. Uses URL pattern matching and heuristic analysis to protect users from malicious links.</p>
-                <div class="tags"><span>JavaScript</span> <span>HTML/CSS</span> <span>Chrome API</span></div>
-                <div class="card-btns">
-                    <a href="#" class="btn-small">View Code</a>
-                </div>
-            </div>
 
-            <div class="project-card">
-                <div class="status-tag ml">ML Project</div>
-                <h3>Student Data Analysis</h3>
-                <p>An exploratory data analysis and machine learning mini-project using CSV datasets. Predicts student performance trends and visualizes key academic correlations.</p>
-                <div class="tags"><span>Python</span> <span>Pandas</span> <span>Matplotlib</span></div>
-                <div class="card-btns">
-                    <a href="#" class="btn-small">GitHub Repo</a>
-                    <a href="#" class="btn-small outline">View Dataset</a>
-                </div>
+          <!-- ── Featured Project ──────────────────────────── -->
+          <article class="project-card featured fade-in">
+            <div class="project-banner" style="background: linear-gradient(135deg, #0f1117 0%, #1a1f2e 100%);">
+              <span class="icon">🛒</span>
+              <div style="position:absolute;inset:0;background:radial-gradient(circle at 30% 50%, rgba(93,255,206,0.08), transparent 60%);"></div>
             </div>
+            <div class="project-body">
+              <div class="project-number">01 — Featured</div>
+              <h2 class="project-title">ShopSphere — E-Commerce Platform</h2>
+              <p class="project-desc">
+                A full-stack e-commerce web application with user authentication, product listings,
+                a shopping cart, order management, and an admin dashboard. Implemented JWT-based
+                auth, RESTful APIs, and a responsive storefront. Supports real-time inventory
+                updates and integrates a mock payment gateway.
+              </p>
+              <div class="project-stack">
+                <span class="tag tag-accent">React.js</span>
+                <span class="tag tag-purple">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">MySQL</span>
+                <span class="tag tag-accent">JWT</span>
+                <span class="tag">REST API</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-primary" aria-label="View live demo of ShopSphere">Live Demo</a>
+                <a href="#" class="btn btn-outline" aria-label="View source code of ShopSphere">GitHub</a>
+              </div>
+            </div>
+          </article>
 
-            <div class="project-card">
-                <h3>Portfolio Website</h3>
-                <p>A fully responsive, multi-page professional portfolio built from scratch using semantic HTML5 and modern CSS3 .</p>
-                <div class="tags"><span>HTML5</span> <span>CSS3</span> <span>JavaScript</span></div>
-                <a href="#" class="btn-small">View Site</a>
+          <!-- ── Project 2 ──────────────────────────────────── -->
+          <article class="project-card fade-in">
+            <div class="project-banner" style="background: linear-gradient(135deg, #0d1117 0%, #161b27 100%);">
+              <span class="icon">📝</span>
+              <div style="position:absolute;inset:0;background:radial-gradient(circle at 50% 50%, rgba(124,106,255,0.1), transparent 65%);"></div>
             </div>
+            <div class="project-body">
+              <div class="project-number">02</div>
+              <h2 class="project-title">TaskFlow — Task Manager</h2>
+              <p class="project-desc">
+                A Kanban-style task management app with drag-and-drop boards, real-time status
+                updates, priority tagging, and user-specific dashboards. Built with a Python
+                Flask backend and a vanilla JS frontend.
+              </p>
+              <div class="project-stack">
+                <span class="tag tag-purple">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag tag-accent">JavaScript</span>
+                <span class="tag">SQLite</span>
+                <span class="tag">HTML/CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-ghost">Live</a>
+                <a href="#" class="btn btn-ghost">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── Project 3 ──────────────────────────────────── -->
+          <article class="project-card fade-in">
+            <div class="project-banner" style="background: linear-gradient(135deg, #0c1118 0%, #141c22 100%);">
+              <span class="icon">💬</span>
+              <div style="position:absolute;inset:0;background:radial-gradient(circle at 50% 50%, rgba(93,255,206,0.07), transparent 65%);"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-number">03</div>
+              <h2 class="project-title">ChatBridge — Real-Time Chat App</h2>
+              <p class="project-desc">
+                A real-time messaging application with WebSocket support, private and group chat
+                rooms, message history persistence, and online presence indicators. Deployed on
+                a free-tier cloud instance.
+              </p>
+              <div class="project-stack">
+                <span class="tag tag-accent">Node.js</span>
+                <span class="tag">Socket.io</span>
+                <span class="tag tag-purple">MongoDB</span>
+                <span class="tag">Express</span>
+                <span class="tag">HTML/CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-ghost">Live</a>
+                <a href="#" class="btn btn-ghost">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── Project 1 ──────────────────────────────────── -->
+          <article class="project-card fade-in">
+            <div class="project-banner" style="background: linear-gradient(135deg, #0e1015 0%, #171a23 100%);">
+              <span class="icon">📊</span>
+              <div style="position:absolute;inset:0;background:radial-gradient(circle at 50% 50%, rgba(255,107,107,0.07), transparent 65%);"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-number">01</div>
+              <h2 class="project-title">Student Performance Analysis System</h2>
+              <p class="project-desc">
+                The main objective of this project is to analyze student data and understand how study hours and attendance affect their marks. This project helps in finding patterns and improving student performance using basic data analysis.
+              </p>
+              <div class="project-stack">
+                <span class="tag tag-accent">Python</span>
+                <span class="tag tag-accent">Pandas</span>
+                <span class="tag tag-accent">Matplotlib</span>
+                <span class="tag tag-accent">HTML</span>
+                <span class="tag tag-accent">CSS</span>
+                <span class="tag tag-accent">JavaScript</span>
+                <span class="tag tag-accent">CSV</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Ananya-code12/Student-performance-analysis-system.git" class="btn btn-outline">GITHUB</a>
+              </div>
+            </div>
+        </article>
+
+        <!-- ── CTA ────────────────────────────────────────────── -->
+        <div style="text-align:center;margin-top:70px;" class="fade-in">
+          <p style="margin-bottom:20px;font-family:var(--mono);font-size:0.82rem;color:var(--text-muted);letter-spacing:0.08em;">
+            More on GitHub →
+          </p>
+          <a href="https://github.com/Ananya-code12?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            View All Repositories
+          </a>
         </div>
+
+      </div>
     </section>
-    <script src="script.js"></script>
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p class="footer-text">
+        Crafted with curiosity by <a href="index.html">Ananya Maurya</a> &nbsp;·&nbsp; 2026
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

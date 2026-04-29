@@ -1,44 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hackathons</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hackathons — Ananya Maurya" />
+  <title>Hackathons — Ananya Maurya</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">Ananya Maurya<span> Portfolio</span></div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="hackathons.html" class="active">Hackathons</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 
-    <section class="container fade-in">
-        <h2 class="section-title">Hackathons & Competitions</h2>
-        <div class="hackathon-list">
-            <div class="hack-item">
-                <div class="hack-status">Sortlisted</div>
-                <h3>Smart India Hackathon (SIH)</h3>
-                <p>Built an AI-powered grievance management system for government departments. Led a team of 6 to design and deploy a full-stack solution in 36 hours.</p>
+  <!-- ── Navbar ─────────────────────────────────────────── -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo mono">&lt;<span>Ananya Maurya</span> /&gt;</a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="hackathons.html">Hackathons</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ── Page Header ────────────────────────────────────── -->
+    <header class="page-header">
+      <div class="page-header-glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-label fade-in">Competitions</div>
+        <h1 class="fade-in">Hackathons &amp; <em>Events.</em></h1>
+      </div>
+    </header>
+
+    <div class="divider"></div>
+
+    <!-- ── Hackathons List ────────────────────────────────── -->
+    <section class="section">
+      <div class="container">
+
+        <!-- Summary strip -->
+        <div class="stats-strip" style="margin-bottom:60px;border-radius:var(--radius);border:1px solid var(--border);padding:32px 40px;" aria-label="Hackathon stats">
+          <div class="stats-grid">
+            <div class="fade-in">
+              <div class="stat-number">3+</div>
+              <div class="stat-label">Events Total</div>
             </div>
-            <div class="hack-item">
-                <div class="hack-status">Participant</div>
-                <h3>GenIgnite Pre-Hackathon</h3>
-                <p>Developed a real-time collaborative code editor with video calling and AI code review integration. Led a team of 5 to design and deploy a full-stack solution in 24 hours.</p>
-            </div>
-            <div class="hack-item">
-                <div class="hack-status status-done">Participant</div>
-                <h3>Electrothon 8.0</h3>
-                <p>Created a supply chain transparency platform using blockchain concepts. The project was recognized for its innovative use of distributed ledger concepts in 36 hours.</p>
-            </div>
+          </div>
         </div>
+
+        <div class="hackathons-list">
+
+          <!-- ── Event 1 ──────────────────────────────────── -->
+          <article class="hackathon-card fade-in">
+            <div class="hack-left">
+              <div class="hack-meta">
+                <span class="hack-date">August 2025</span>
+              </div>
+              <h2 class="hack-title">Smart India Hackathon 2025</h2>
+              <div class="hack-org">Ministry of Education, Government of India</div>
+              <p class="hack-desc">
+                Developed an AI-assisted grievance management system for government departments. Our team of six design and deploy a full-stack solution in 36 hours. 
+                Completed at the national internal round.
+              </p>
+              <div class="hack-tags">
+                <span class="tag tag-accent">Python</span>
+                <span class="tag tag-accent">HTML</span>
+                <span class="tag tag-accent">REST APIs</span>
+                <span class="tag tag-accent">CSS</span>
+                <span class="tag tag-accent">React.js</span>
+                <span class="tag tag-accent">MySQL</span>
+              </div>
+            </div>
+            <div>
+              <span class="status-badge status-participated">
+                <span class="dot" aria-hidden="true"></span>
+                Sortlisted
+              </span>
+            </div>
+          </article>
+
+          <!-- ── Event 2 ──────────────────────────────────── -->
+          <article class="hackathon-card fade-in">
+            <div class="hack-left">
+              <div class="hack-meta">
+                <span class="hack-date"> September 2025  . 24 Hours</span>
+              </div>
+              <h2 class="hack-title">GenIgnite Pre-Hackathon</h2>
+              <div class="hack-org">Inderprastha Engineering College, Ghaziabad,Uttar Pradesh</div>
+              <p class="hack-desc">
+                A 24-hour pre-event for the GenIgnite Hackathon, organized by HackwithIndia in collaboration with Devnovate, to engage 200-300 students at Inderprastha Engineering College. The event will provide hands-on coding experience, mentorship, workshops, and speaker sessions, preparing participants for the main GenIgnite hackathon.
+              </p>
+              <div class="hack-tags">
+                <span class="tag tag-accent">HTML/CSS</span>
+                <span class="tag tag-accent">JavaScript</span>
+                <span class="tag tag-accent">MySQL</span>
+                <span class="tag tag-accent">REST APIs</span>
+              </div>
+            </div>
+            <div>
+              <span class="status-badge status-participated">
+                <span class="dot" aria-hidden="true"></span>
+                Participant
+              </span>
+            </div>
+          </article>
+
+          <!-- ── Event 3 ──────────────────────────────────── -->
+          <article class="hackathon-card fade-in">
+            <div class="hack-left">
+              <div class="hack-meta">
+                <span class="hack-date">March 2026 . 48 Hours</span>
+              </div>
+              <h2 class="hack-title">Electrothon 8.0</h2>
+              <div class="hack-org"> National Institute of Technology, Hamirpur</div>
+              <p class="hack-desc">
+                Participated in a 48-hour national-level hackathon organized by NIT Hamirpur. Worked in a team of 4-members themed "Labyrinth of Ethernum" focuses on real world challenges through AI, agentic systems, and open innovation. Actively contributed to idea generation, development, problem solving and final presentation. Strengthened skills in coding, teamwork, time management under pressure and presenting solutions effectively.
+              </p>
+              <div class="hack-tags">
+                <span class="tag tag-accent">Python</span>
+                <span class="tag tag-accent">HTML/CSS</span>
+                <span class="tag tag-accent">JavaScript</span>
+                <span class="tag tag-accent">Snowflake</span>
+              </div>
+            </div>
+            <div>
+              <span class="status-badge status-participated">
+                <span class="dot" aria-hidden="true"></span>
+                Participant
+              </span>
+            </div>
+          </article>
+
+          
+
+        </div>
+
+        <!-- ── Other Achievements ──────────────────────────── -->
+        <div style="margin-top:80px;">
+          <div class="section-label fade-in">Also</div>
+          <h2 style="margin-bottom:40px;" class="fade-in">Other Achievements</h2>
+
+          <div class="projects-grid">
+            <article class="card fade-in">
+              <div style="font-size:1.5rem;margin-bottom:12px;">🏅</div>
+              <h3 style="margin-bottom:8px;">LeetCode</h3>
+              <p style="font-size:0.86rem;">Solved 100+ problems.</p>
+            </article>
+
+            <article class="card fade-in">
+              <div style="font-size:1.5rem;margin-bottom:12px;">⭐</div>
+              <h3 style="margin-bottom:8px;">HackerRank</h3>
+              <p style="font-size:0.86rem;">5-star badge in Problem Solving. </p>
+            </article>
+
+            <article class="card fade-in">
+              <div style="font-size:1.5rem;margin-bottom:12px;">📜</div>
+              <h3 style="margin-bottom:8px;">Certifications</h3>
+              <p style="font-size:0.86rem;">C++ (NPTEL), 15+ Hackathon (Online + Offline) .</p>
+            </article>
+          </div>
+        </div>
+
+      </div>
     </section>
-    <script src="script.js"></script>
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p class="footer-text">
+        Crafted with curiosity by <a href="index.html">Ananya Maurya</a> &nbsp;·&nbsp; 2026
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

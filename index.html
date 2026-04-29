@@ -1,36 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Home</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aryan Sharma — B.Tech CSE Student, Developer & Problem Solver" />
+  <title>Aryan Sharma — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">Ananya Maurya<span> Portfolio</span></div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="hackathons.html">Hackathons</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
 
-    <section class="hero fade-in">
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Ananya Maurya</span></h1>
-            <h3>B.Tech Computer Science Student</h3>
-            <p>I am a B.Tech Computer Science student with strong interest in software development and data analysis. I enjoy solving real-world problems using code.</p>
-            <div class="hero-btns">
-                <a href="projects.html" class="btn primary">View Projects</a>
-                <a href="Ananya_resume.pdf" class="btn secondary">Download Resume</a>
-            </div>
+  <!-- ── Navbar ─────────────────────────────────────────── -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo mono">&lt;<span>Ananya Maurya</span> /&gt;</a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="hackathons.html">Hackathons</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── Hero ───────────────────────────────────────────── -->
+  <main>
+    <section class="hero">
+      <div class="hero-glow"  aria-hidden="true"></div>
+      <div class="hero-glow-2" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <p class="hero-pretitle fade-in stagger-child">Hello, World — I'm</p>
+
+        <h1 class="hero-name fade-in stagger-child">
+          Ananya<br><span class="accent">Maurya.</span>
+        </h1>
+
+        <p class="hero-role fade-in stagger-child">
+          &gt;&nbsp;<span class="role-text"></span><span class="cursor" aria-hidden="true"></span>
+        </p>
+
+        <p class="hero-desc fade-in stagger-child">
+          A passionate Computer Science student building elegant solutions to complex problems.
+          I love turning ideas into reality through clean code, creative design, and relentless curiosity.
+        </p>
+
+        <div class="hero-cta fade-in stagger-child">
+          <a href="projects.html" class="btn btn-primary">View Projects</a>
+          <a href="Ananya_resume.pdf" class="btn btn-outline" download>Download Resume</a>
         </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">scroll</div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- ── Stats ──────────────────────────────────────────── -->
+    <section class="stats-strip" aria-label="Quick stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="fade-in">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="fade-in">
+            <div class="stat-number">6+</div>
+            <div class="stat-label">Languages Known</div>
+          </div>
+          <div class="fade-in">
+            <div class="stat-number">3+</div>
+            <div class="stat-label">Hackathons</div>
+          </div>
+          <div class="fade-in">
+            <div class="stat-number">3rd</div>
+            <div class="stat-label">Year Undergraduate</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Quick links ────────────────────────────────────── -->
+    <section class="section">
+      <div class="container">
+        <div class="section-label">Explore</div>
+        <h2 class="section-title">What I Do</h2>
+
+        <div class="projects-grid">
+
+          <article class="card fade-in">
+            <div style="font-size:2rem;margin-bottom:16px;">💻</div>
+            <h3 style="margin-bottom:10px;">Software Development</h3>
+            <p>Building full-stack web applications and backend systems with Java, Python, and JavaScript.</p>
+          </article>
+
+          <article class="card fade-in">
+            <div style="font-size:2rem;margin-bottom:16px;">🗄️</div>
+            <h3 style="margin-bottom:10px;">Database Design</h3>
+            <p>Designing efficient relational schemas and writing optimized SQL queries for data-driven applications.</p>
+          </article>
+
+          <article class="card fade-in">
+            <div style="font-size:2rem;margin-bottom:16px;">🧩</div>
+            <h3 style="margin-bottom:10px;">Problem Solving</h3>
+            <p>Competitive programming on LeetCode and HackerRank, with a focus on algorithms and data structures.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p class="footer-text">
+        Crafted with curiosity by <a href="index.html">Ananya Maurya</a> &nbsp;·&nbsp; 2024
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
